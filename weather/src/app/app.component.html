@@ -20,9 +20,11 @@
 
 <div>
   <img [src]='img' style='height: 900px;' />
-  <div class="jumbotron">
+  <div class="jumbotron" *ngFor="let grados of clima ">
 
-    <h1 class="display-4">grados centigrados</h1>
+    <div>
+      <h1 class="display-4">{{grados.temp}}grados centigrados</h1>
+    </div>
     <p class="lead">minimo, maximo, parcialmente soleado</p>
     <hr class="my-4">
     <p>Name, City</p>
